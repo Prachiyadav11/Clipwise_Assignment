@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 5 rem;
+    width: 5 rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: rgb(20, 53, 83);
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header {
+    position: relative;
+    height: 900px;
+    /* Adjust height as necessary */
+    color: white;
+    padding: 30px 0  0 0;
+    /* overflow: hidden; */
+    margin-bottom: 0%;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/bgimage.png');
+    /* Path to your first image */
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.9;
+}
+
+
+
+.header .container {
+    position: relative;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+.cart-icon a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.hero {
+
+
+    text-align: left;
+    /* Center the text */
+    padding: 30px 20px;
+    flex: 1;
+
+
+}
+
+.about {
+    text-decoration: none;
+    color: black;
+    padding: 2.5rem;
+}
+
+.hero h1 {
+
+    font-size: 3rem;
+    /* margin-bottom: 10px; */
+}
+
+.hero h1 span {
+    color: gold;
+    /* Example of a text color change, adjust as needed */
+}
+
+.hero span {
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+
+.align {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space out items */
+    align-items: flex-start;
+    /* Align items to the top */
+    margin: 20px 0;
+    /* Add some vertical margin */
+}
+
+.newlot {
+    margin-right: 3rem;
+    position: relative; /* Positioning context for the child elements */
+    display: inline-block;
+   background-color: #fbf9f9;
+   
+   border-radius: 10%;
+   padding:20px;
+}
+
+.newlot img {
+    height: 20rem;
+    width: 20rem;
+    padding-top: 5px;
+}
+
+.blue{
+    height: fit-content;
+    width: fit-content;
+    margin-top:0px; /* Space from the top of the new lot div */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.5rem; /* Font size */
+    text-align: left; 
+    background-color: rgb(76, 153, 247);
+    padding: 2px;
+  
+
+}
+
+
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    color: rgb(119, 195, 245);
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    border: solid rgb(119, 195, 245);
+}
+
+.btn:hover {
+    background-color: rgb(119, 195, 245);
+    color: #fff;
+}
+
+/* Product Section */
+.products {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.filters {
+    display: inline;
+    text-align: left;
+    margin-bottom: 5rem;
+    padding: 5rem;
+}
+
+.filters select {
+    padding: 5px;
+
+    border: none;
+}
+.value{
+     color: rgb(20, 53, 83);
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* .product-card h3 {
+    margin: 15px 0;
+} */
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.view-more {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 8rem;
+    text-align: center;
+}
+
+/* Best Price Section */
+.best-price {
+    background-color: #f0f4fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.best-price-content {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discount-price {
+    font-size: 2rem;
+    color: #ffbc00;
+}
+.last{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.leftsec{
+    justify-content: right;
+    text-align: right;
+   width: 70%;
+   padding: 20px;
+   text-align: right;
+}
+.rightsec{
+display:flex;
+    width:30%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+   justify-content: center;
+   align-items: center;
+    border-radius: 50%;
+}
+.rightsec img{
+   width:70%;
+   height:auto;
+    border-radius: 50%;
+    position:relative;
+    padding:5%;
+}
+.cross{
+    display: inline;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(35, 76, 111);
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
